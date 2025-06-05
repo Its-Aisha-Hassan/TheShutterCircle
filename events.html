@@ -11,20 +11,20 @@
 			<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 
-<body id="events-page"> <!-- Added a unique id -->
+<body>
     <header>
         <a href="index.html"><img src="images/logo.svg" alt="The Shutter Circle logo" width="140" height="90"></a>
 	   <h1><a href="index.html">The Shutter Circle</a></h1>
     </header>
 
-<!-- NEW COMMENT: Added a unique ID to the body tag to target specific page styles in the CSS. I struggled with this for about a week because I could not for the life of me figure out how to design more than just the index page but found the solution just days before submission. After debating whether to use a class or an ID, I chose an ID because I wanted to apply styles unique to each page rather than a generalized layout. The helpful discussion that helped me make an informed choice: https://stackoverflow.com/questions/3919456/class-or-id-on-body-tag
-https://www.reddit.com/r/webdev/comments/wij88m/how_do_you_connect_multiple_html_pages_to_one_css/ -->
+<!-- NEW COMMENT: Initially, I relied on body id for styling specific pages, but this approach turned out to be tedious and prone to inconsistencies that were difficult to address. Feeling annoyed, I explored other resources and came across this source: https://poe.com/s/fAYkl3Or8zMVTsC8ZGYK, which recommended using classes and wrappers instead. This method helped me overcome the challenges, streamline my CSS, and ensure more consistent styling across the site. -->
 
 <!-- =========== NAVIGATION ============== -->
 
 <nav>
 	<div id="page-wrapper">
 	<ul>
+		<li><a href="index.html" title="HOMEPAGE">HOME</a></li>
 		<li><a href="about.html" title="About The Shutter Circle">ABOUT</a></li>
 		<li><a href="articles.html" title="Articles">ARTICLES</a>
 		<ul>
@@ -48,9 +48,9 @@ https://www.reddit.com/r/webdev/comments/wij88m/how_do_you_connect_multiple_html
     <article>
         <section>
 			<div class="event-header">
-             <hr class="beige-line">
-             <h2>EVENTS</h2>
-             <hr class="beige-line">
+				<hr class="beige-line">
+				<h2>EVENTS</h2>
+				<hr class="beige-line">
             </div>
         </section>
 	</article>
@@ -61,7 +61,7 @@ https://www.reddit.com/r/webdev/comments/wij88m/how_do_you_connect_multiple_html
 
 	<article id="two-columns">
         <section>
-            <img src="images/img_newyork.jpg" alt="new york photo walk" width="600" height="400">
+			<img src="images/img_newyork.jpg" alt="new york photo walk" width="600" height="400">
 
             <div>
 				<h2>PHOTOWALK | NEW YORK, NY</h2>
@@ -78,7 +78,9 @@ https://www.reddit.com/r/webdev/comments/wij88m/how_do_you_connect_multiple_html
 			</div>
         </section>
 
-<!-- NEW COMMENT: Please note that the links I attached do not have the events I listed on my site, but it's just to show that I know how to do that. My goal for this site is for the "Learn More" button to direct viewers to the specific post that the "host" of the event released on social media. However, since the events are obviously fake, the next best thing was to link to the sites/social media pages -->
+<!-- NEW COMMENT: Please note that the links I attached do not have the events I listed on my site, but it's just to show that I know how to do that. My goal for this site is for the "Learn More" button to direct viewers to the specific post that the "host" of the event released on social media. However, since the events are obviously fake, the next best thing was to link to the sites/social media pages. -->
+
+<!-- NEW COMMENT: The added use of span class="event-date" is to apply a unique style directly to only what I want without affecting other elements, sort of to give it an emphasis for viewers to glance at when they first enter this page. What is great about it is that it does not involve inline css styling https://www.w3schools.com/tags/tag_span.asp -->
 
         <section>
              <img src="images/img_singapore.jpg" alt="singapore gallery walk" width="600" height="400">
@@ -102,7 +104,7 @@ https://www.reddit.com/r/webdev/comments/wij88m/how_do_you_connect_multiple_html
 
 <!-- NEW COMMENT: Added target="_blank" to the Learn More button links so that viewers are redirected to a new tab when they click. This ensures they can explore the content while still keeping my website open. -->
 
-<!-- FOOTER -->
+<!-- =========== FOOTER ============== -->
 
 <footer>
 		<address>

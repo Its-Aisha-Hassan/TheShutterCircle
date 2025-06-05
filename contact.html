@@ -11,7 +11,7 @@
 			<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 
-<body id="contact-page"> <!-- Added unique ID -->
+<body>
 	<header>
 		<a href="index.html"><img src="images/logo.svg" alt="The Shutter Circle logo" width="160" height="100"></a>		
 		<h1><a href="index.html">The Shutter Circle</a></h1>
@@ -22,6 +22,7 @@
 <nav>
 	<div id="page-wrapper">
 	<ul>
+		<li><a href="index.html" title="HOMEPAGE">HOME</a></li>
 		<li><a href="about.html" title="About The Shutter Circle">ABOUT</a></li>
 		<li><a href="articles.html" title="Articles">ARTICLES</a>
 		<ul>
@@ -57,31 +58,48 @@
 	<article>
 		<div class="contact-content">
 			<section class="contact-text">
-				<h2>HAVE QUESTIONS? WANT TO SEND IN A SUBMISSION?</h2>
+				
+				<h2>HAVE ANY QUESTIONS?
+				<br> 
+				WANT TO SEND IN A SUBMISSION?</h2>
+					
 					<p>Got stunning film photographs or an inspiring story to share? We’d love to feature your work! Submit your photos along with a short description about what inspired them, and join our growing circle of passionate photographers.</p>
     
 					<p>Whether you’re experimenting with vintage cameras, creating magical moments in the darkroom, or capturing the world one frame at a time, your work deserves to be seen. Let us celebrate your artistry and share it with our community.</p>
     
-					<p>If you have any questions, ideas, or just want to connect, you can fill up the submission box below and we'll get back to you as soon as possible. You can also shoot us an email at:<a href="mailto:theshuttercircle@hotmail.com">theshuttercircle@hotmail.com</a></p>
-    
-					<img src="images/img_contact.jpg" alt="reach out if you have questions" class="contact-image">
-	
+					<p>If you have any questions, ideas, or just want to connect, you can fill up the submission box below and we'll get back to you as soon as possible. You can also directly shoot us an email at: <strong><a href="mailto:theshuttercircle@hotmail.com">theshuttercircle@hotmail.com</a></strong></p>
+					
+					<a href="images/img_contact.jpg" title="How to reach out" target="_blank">
+						<img src="images/img_contact.jpg" alt="reach out if you have questions" class="contact-image">
+					</a>
 			</section>
 
-	<section class="contact-form">
-		<form>
-			NAME<br><input name="name" type="text" maxlength="15"><br>
-			EMAIL<br><input name="email" type="email" maxlength="15"><br>
-			MESSAGE<br><textarea name="message" maxlength="250"></textarea><br>
-			
-			<button type="submit">submit</button><br>       
-		</form>
-	</section>
-	</div>
+			<section class="contact-form">
+				<form>
+					<label for="name">Name</label>
+					<input id="name" name="name" type="text" maxlength="15">
+        
+					<label for="email">Email</label>
+					<input id="email" name="email" type="email">
+        
+					<label for="phone">Phone Number</label>
+					<input id="phone" name="phone" type="tel">
+
+					<label class="subscribe-label">Subscribe to The Shutter Circle's Magazine?<input type="checkbox" name="subscribe" value="yes"></label>
+        		
+					<label for="message">Message</label>
+					<textarea id="message" name="message" maxlength="250"></textarea>
+		
+					<button type="submit">Submit</button>
+				</form>
+			</section>
+		</div>
 	</article>
 </main>
 
 <!-- NEW COMMENT: I followed this tutorial (https://www.youtube.com/watch?v=5WPXquLDLVc) to create a submission box. While it's not perfect and could likely be done better with different software, I did my best to emulate the desired outcome. I also used <br> to break in between the elements and have them stack rather than side by side. I'm really proud as I was going to just do away with the submission box but tried my hands at making one and making it pretty. -->
+
+<!-- NEW COMMENT: After receiving feedback in Week 13, I added a section where visitors can input their phone number, offering a more direct point of contact for those who may not regularly check their emails. Additionally, I included a subscription option for The Shutter Circle's magazine, allowing visitors to opt-in by simply ticking the checkbox next to the prompt. I learnt how to do this through https://stackoverflow.com/questions/26616382/how-to-add-a-subscribe-to-newsletter-checkbox-to-existing-form -->
 
 <!-- Referring to the lecture slides, I remembered that in ordered to increase the usability of a website, it is important to configure the email address as thhe link text, hence, I did that. -->
 
